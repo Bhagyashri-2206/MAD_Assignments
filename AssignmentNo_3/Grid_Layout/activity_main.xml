@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click a Button"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:text="One"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Two"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Three"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Four"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
