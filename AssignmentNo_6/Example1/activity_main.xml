@@ -1,64 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:layout_height="match_parent">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Advanced Controls"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:paddingBottom="20dp"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textOn="ON"
-        android:textOff="OFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Registration Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rate Us"
-        android:layout_marginTop="15dp"/>
+        <TextView
+            android:text="Full Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:stepSize="1.0"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Progress"
-        android:layout_marginTop="15dp"/>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="50"/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"/>
 
 
-    <Button
-        android:id="@+id/btnShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show Alert"
-        android:layout_marginTop="20dp"/>
+        <TextView
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"/>
+
+
+        <TextView
+            android:text="Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:text="Hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reading"/>
+
+        <CheckBox
+            android:id="@+id/checkSports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sports"/>
+
+        <CheckBox
+            android:id="@+id/checkMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music"/>
+
+
+        <TextView
+            android:text="Enable Notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+
+        <ToggleButton
+            android:id="@+id/toggleNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="ON"
+            android:textOff="OFF"/>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
