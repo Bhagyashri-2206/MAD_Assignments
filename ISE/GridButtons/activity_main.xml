@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top TextView -->
+    <TextView
+        android:id="@+id/studentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Bhagyashri Ganesh Patil\nRoll No: 07\nBatch: T1\nClass: TY\nDiv: B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:gravity="center"
+        android:background="#C595D1"/>
+
+    <!-- Your GridLayout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="5"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Linear Layout"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Relative Layout"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Absolute Layout"/>
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Grid Layout"/>
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Frame Layout"/>
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Table Layout"/>
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Explicit Intent"/>
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Implicit Intent"/>
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Implicit Intent 2"/>
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:text="Change Image"/>
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:text="Calculator"/>
+
+    </GridLayout>
+
+</LinearLayout>
