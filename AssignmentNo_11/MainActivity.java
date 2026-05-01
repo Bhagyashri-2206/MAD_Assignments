@@ -32,13 +32,12 @@ public class MainActivity extends AppCompatActivity {
         btnView = findViewById(R.id.btnView);
         tvResult = findViewById(R.id.tvResult);
 
-        // Create or open database
+        
         db = openOrCreateDatabase("StudentDB", MODE_PRIVATE, null);
 
-        // Create table
         db.execSQL("CREATE TABLE IF NOT EXISTS student(id INTEGER PRIMARY KEY, name TEXT)");
 
-        // Insert Operation
+    
         btnInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Update Operation
+        
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Delete Operation
+        
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // View Operation
+        
         btnView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
