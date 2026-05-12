@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_top_tabs"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/progressCircle"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:donut_finished_color="#42A5F5"
+            app:donut_unfinished_color="#BBDEFB"
+            app:donut_text_color="#000000"/>
+
+        <Button
+            android:id="@+id/btnDrink"
+            android:text="+ Drink"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
+        <Button
+            android:id="@+id/btnRefresh"
+            android:text="Reset"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+    </LinearLayout>
+</LinearLayout>

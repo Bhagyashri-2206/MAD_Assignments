@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:id="@+id/main">
+
+    <!-- MAIN WELCOME TEXT -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Hi 👋\nI am your personal hydration companion"
+        android:textColor="#0D47A1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- SUB TEXT -->
+    <TextView
+        android:id="@+id/txtSubWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="In order to provide tailored hydration advice, I need to get some basic information. And I'll keep this a secret."
+        android:textColor="#1565C0"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- LET'S GO BUTTON -->
+    <Button
+        android:id="@+id/btnLetsGo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#2196F3"
+        android:text="LET'S GO"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- WATER IMAGE (BOTTOM RIGHT) -->
+    <ImageView
+        android:id="@+id/imgWater"
+        android:layout_width="184dp"
+        android:layout_height="180dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/water1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
